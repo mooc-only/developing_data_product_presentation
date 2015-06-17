@@ -58,5 +58,68 @@ In the Regression Models' course project, one of the original objetives was to d
 
 
 
-<iframe src="assets/img/transmission_boxplot.html" width=50% height=50%></iframe>
+<script type='text/javascript' src=//code.jquery.com/jquery-1.9.1.min.js></script>
+<script type='text/javascript' src=//code.highcharts.com/highcharts.js></script>
+<script type='text/javascript' src=//code.highcharts.com/highcharts-more.js></script>
+<script type='text/javascript' src=//code.highcharts.com/modules/exporting.js></script> 
+ <style>
+  .rChart {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 800px;
+    height: 400px;
+  }  
+  </style>
+<div id = 'iframesrc' class = 'rChart highcharts'></div>
+<script type='text/javascript'>
+    (function($){
+        $(function () {
+            var chart = new Highcharts.Chart({
+ "dom": "iframesrc",
+"width":            800,
+"height":            400,
+"credits": {
+ "href": null,
+"text": null 
+},
+"exporting": {
+ "enabled": false 
+},
+"title": {
+ "text": null 
+},
+"yAxis": [
+ {
+ "title": {
+ "text": "Miles per Gallon" 
+} 
+} 
+],
+"series": [
+ {
+ "name": "Observations",
+"data": [
+ [           10.4,          14.95,           17.3,           19.2,           24.4 ],
+[             15,             21,           22.8,           30.4,           33.9 ] 
+] 
+} 
+],
+"xAxis": [
+ {
+ "categories": [ "Automatic", "Manual" ],
+"title": {
+ "text": "Transmission" 
+} 
+} 
+],
+"chart": {
+ "type": "boxplot",
+"renderTo": "iframesrc" 
+},
+"id": "iframesrc" 
+});
+        });
+    })(jQuery);
+</script>
 

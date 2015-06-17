@@ -54,7 +54,9 @@ wt (Weight) is the most correlated predictor because it has the highest absolute
 
 ## Related with the original problem
 
-In the Regression Models' course project, one of the original objetives was to determine which kind of transmition was the best respect the distance covered. Here, I present some information (using rCharts) where anyone could start to look for the answer. If you don't see the boxplot refresh this page, I don't know why it doesn't show automatically.
+In the Regression Models' course project, one of the original objetives was to determine which kind of transmition was the best respect the distance covered. Here, I present some information (using rCharts) where anyone could start to look for the answer.
 
-<iframe src = "assets/img/transmission_boxplot.html" width = 50% height = 50%></iframe>
+
+
+<iframe src="assets/img/transmission_boxplot.html" width=50% height=50%></iframe>
 
